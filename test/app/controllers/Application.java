@@ -12,6 +12,8 @@ public class Application extends Controller {
 	    render();
 	}
 // Test
+// Test commit branch
+	
 	public static void sayHello(@Required String myName) {
 		if (validation.hasErrors()){
 	   		flash.error("Heit, field nama tidak boleh kosong");
