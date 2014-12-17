@@ -6,7 +6,7 @@ import play.mvc.*;
 
 import java.util.*;
 
-import models.anggota;
+import models.Anggota;
 
 
 public class Application extends Controller {
@@ -26,7 +26,7 @@ public class Application extends Controller {
 		render(myName);
 	}
 	
-	public static void verifikasi(@Required anggota agt){
+	public static void verifikasi(@Required Anggota agt){
 		if (validation.hasErrors()){
 			flash.error("Hei ada error");
 			index();
