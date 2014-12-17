@@ -11,8 +11,9 @@ public class Application extends Controller {
 	public static void index() {
 	    render();
 	}
-// Test
+// Test Master
 // Test commit branch
+// Test setelah Master dan Branch	.......
 	
 	public static void sayHello(@Required String myName) {
 		if (validation.hasErrors()){
