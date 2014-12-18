@@ -26,7 +26,18 @@ public class Application extends Controller {
 		render(myName);
 	}
 	
-	public static void verifikasi(@Required Anggota agt){
+	public static void verifikasi1(@Required String nama, 
+			                       @Required String alamat, 
+			                       @Required String pendidikan){
+		if (validation.hasErrors()){
+			flash.error("Hei ada error");
+			index();
+		}
+		render(nama, alamat, pendidikan);	
+	}
+	
+	
+	public static void verifikasi(Anggota agt){
 		if (validation.hasErrors()){
 			flash.error("Hei ada error");
 			index();
