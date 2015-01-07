@@ -15,4 +15,9 @@ public class Anggota extends Model {
 	String alamat;
 	@Required
 	String pendidikan;
+	
+	public String toString() {
+	      return Nama;
+	   }
+	
 }
