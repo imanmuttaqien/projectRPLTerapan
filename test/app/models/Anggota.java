@@ -14,7 +14,7 @@ public class Anggota extends Model {
 	//@Required
 	public String nama;
 	//@Required
-	public String alamat;
+	public String alamatrumah;
 	//@Required
 	public String pendidikan;
 	public Date tgllhr;
