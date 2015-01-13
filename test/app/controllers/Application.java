@@ -45,7 +45,7 @@ public class Application extends Controller {
 		render(agt);	
 	}
 	
-	public int sum(int x, int y){
+	public static int sum(int x, int y){
 		System.out.println("sedang menjumlahkan");
 		return (x+y);
 	}
