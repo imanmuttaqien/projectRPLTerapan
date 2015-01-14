@@ -26,7 +26,25 @@ public class Anggota extends Model {
       this.nama=nama;
     }
 	public String toString() {
-	      return nama;
+	      return this.nama;
 	   }
-	
+    public void setAlamat(String alamatrumah){
+      this.alamatrumah=alamatrumah;
+    }
+	public String toString() {
+	      return this.alamatrumah;
+	   }
+    public void setPendidikan(String pendidikan){
+      this.pendidikan=pendidikan;
+    }
+	public String toString() {
+	      return this.pendidikan;
+	   }
+     public void setKodepos(String kodepos){
+      this.kodepos=kodepos;
+    }
+	public String toString() {
+	      return this.kodepos;
+	   }
+
 }
