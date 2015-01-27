@@ -20,7 +20,7 @@ public class Mahasiswa extends Model {
 	public Date tgllhr;
     public String kodepos;
     @ManyToOne
-    public JenisKelamin kelamin;
+    public String kelamin;
     
     public void setNama(String nama){
       this.nama=nama;
@@ -28,5 +28,11 @@ public class Mahasiswa extends Model {
 	public String toString() {
 	      return nama;
 	   }
+     public void setJenisKelamin(String kelamin){
+     	this.kelamin=kelamin;
+     }
+     	public String toString() {
+     		return this.kelamin;
+     	}
 	
 }
