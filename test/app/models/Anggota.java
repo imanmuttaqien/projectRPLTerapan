@@ -17,7 +17,7 @@ public class Anggota extends Model {
 	public String alamatrumah;
 	//@Required
 	public String pendidikan;
-	public Date tgllhr;
+	public String tgllhr;
     public String kodepos;
     @ManyToOne
     public String kelamin;
@@ -52,5 +52,11 @@ public class Anggota extends Model {
 	public String toString() {
 	      return this.kodepos;
 	   }
+      public void settgllhr(String tgllhr){
+       this.tgllhr=tgllhr;
+    }
+        public String toString() {
+    	      return this.tgllhr;
+           }
 
 }
